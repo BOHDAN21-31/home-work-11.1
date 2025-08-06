@@ -7,12 +7,15 @@
 <button id="myButton">Натисни мене</button>
 
 <script>
-    const handleClick = document.getElementById('myButton');
-    handleClick.addEventListener('click', () => {
+    function handleButtonClick() {
         console.log("Кнопку натиснуто");
-    });
+    }
 
-    module.exports = handleClick; // не видаляти цей код
+    const button = document.getElementById('myButton');
+
+    button.addEventListener('click', handleButtonClick);
+
+    module.exports = button; // не видаляти цей код
 </script>
 </body>
 </html>
